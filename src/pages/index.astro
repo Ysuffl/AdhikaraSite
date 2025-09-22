@@ -1,11 +1,211 @@
 ---
-import Welcome from '../components/Welcome.astro';
+// src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="OSIS SMA Negeri 1 Jakarta - Beranda">
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-800 via-blue-700 to-blue-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          OSIS SMK Nurul Islam Jakarta
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+          Membangun Generasi Unggul, Berkarakter, dan Berprestasi untuk Masa Depan Indonesia yang Gemilang
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="/profil" class="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 shadow-lg">
+            Tentang Kami
+          </a>
+          <a href="/program" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition duration-300">
+            Program Kerja
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Tentang OSIS
+          </h2>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            Organisasi Siswa Intra Sekolah (OSIS) SMA Negeri 1 Jakarta adalah wadah organisasi siswa yang berperan sebagai penggerak dan motivator dalam berbagai kegiatan sekolah. Kami berkomitmen untuk mengembangkan potensi siswa dalam bidang akademik, non-akademik, dan pembentukan karakter.
+          </p>
+          <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            Dengan motto "Bersatu Membangun Prestasi", kami berusaha menciptakan lingkungan sekolah yang kondusif, inovatif, dan inspiratif bagi seluruh siswa SMA Negeri 1 Jakarta.
+          </p>
+          <a href="/profil" class="inline-flex items-center text-blue-800 font-semibold hover:text-blue-600 transition duration-150">
+            Selengkapnya
+            <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="bg-blue-100 rounded-2xl p-8 lg:p-12">
+          <div class="text-center">
+            <div class="w-24 h-24 bg-blue-800 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <span class="text-white text-3xl font-bold">O</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Visi Kami</h3>
+            <p class="text-gray-700 text-lg leading-relaxed">
+              "Menjadi organisasi siswa yang unggul, inovatif, dan berintegritas dalam membangun generasi penerus bangsa yang berkarakter dan berprestasi"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Program Unggulan
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Beragam program inovatif yang dirancang untuk mengembangkan potensi siswa secara optimal
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition duration-300">
+          <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Program Akademik</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Bimbingan belajar, olimpiade sains, dan kegiatan pengembangan akademik lainnya untuk meningkatkan prestasi siswa.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition duration-300">
+          <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-green-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Program Sosial</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Kegiatan bakti sosial, penggalangan dana, dan program kepedulian terhadap masyarakat sekitar.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition duration-300">
+          <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Program Kreativitas</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Festival seni, lomba kreativitas, dan berbagai kegiatan untuk mengasah bakat dan minat siswa.
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="/program" class="bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-lg">
+          Lihat Semua Program
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Berita & Kegiatan Terbaru
+        </h2>
+        <p class="text-xl text-gray-600">
+          Update terkini mengenai kegiatan dan prestasi OSIS
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600"></div>
+          <div class="p-6">
+            <div class="text-sm text-blue-600 font-semibold mb-2">15 September 2024</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Pelantikan Pengurus OSIS Periode 2024-2025</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Acara pelantikan pengurus OSIS baru telah dilaksanakan dengan khidmat di aula sekolah...
+            </p>
+            <a href="#" class="inline-flex items-center text-blue-800 font-semibold hover:text-blue-600 mt-4 transition duration-150">
+              Baca Selengkapnya
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="h-48 bg-gradient-to-br from-green-400 to-green-600"></div>
+          <div class="p-6">
+            <div class="text-sm text-blue-600 font-semibold mb-2">10 September 2024</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Juara 1 Lomba Kreativitas Tingkat Provinsi</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Tim kreatif OSIS berhasil meraih juara 1 dalam lomba kreativitas tingkat provinsi DKI Jakarta...
+            </p>
+            <a href="#" class="inline-flex items-center text-blue-800 font-semibold hover:text-blue-600 mt-4 transition duration-150">
+              Baca Selengkapnya
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+          <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600"></div>
+          <div class="p-6">
+            <div class="text-sm text-blue-600 font-semibold mb-2">5 September 2024</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Program Bakti Sosial di Panti Asuhan</h3>
+            <p class="text-gray-600 leading-relaxed">
+              Kegiatan bakti sosial OSIS dalam rangka memperingati Hari Kemanusiaan Sedunia...
+            </p>
+            <a href="#" class="inline-flex items-center text-blue-800 font-semibold hover:text-blue-600 mt-4 transition duration-150">
+              Baca Selengkapnya
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-blue-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Jalin Kerja Sama dengan OSIS SMK Nurul Islam
+      </h2>
+      <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+        Dukung program positif kami di sekolah untuk mengembangkan potensi siswa. Bersama, kita
+        menciptakan kegiatan inspiratif yang bermanfaat bagi generasi muda. 
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/kontak" class="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 shadow-lg">
+          Hubungi Kami
+        </a>
+        <a href="/pengurus" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition duration-300">
+          Lihat Pengurus
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>

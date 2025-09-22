@@ -1,0 +1,452 @@
+---
+// src/pages/profil.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="OSIS SMK Nurul Islam - Profil Organisasi">
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-800 via-blue-700 to-blue-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          Profil OSIS SMK Nurul Islam
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          Mengenal Lebih Dekat Organisasi Siswa Intra Sekolah yang Berkomitmen Membangun Generasi Unggul
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sejarah Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Sejarah OSIS
+          </h2>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            Organisasi Siswa Intra Sekolah (OSIS) SMK Nurul Islam Jakarta didirikan sejak tahun 1985 sebagai wadah pengembangan potensi siswa. Selama puluhan tahun, OSIS telah menjadi motor penggerak berbagai kegiatan dan prestasi di sekolah.
+          </p>
+          <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+            Dengan semangat "Bersatu Membangun Prestasi", OSIS terus berkembang dan berinovasi dalam menjalankan program-program yang bermanfaat bagi siswa dan sekolah. Hingga kini, OSIS telah mengukir banyak prestasi baik di tingkat lokal, nasional, maupun internasional.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Komitmen kami adalah menciptakan lingkungan sekolah yang kondusif, inovatif, dan inspiratif bagi seluruh siswa SMK Nurul Islam Jakarta.
+          </p>
+        </div>
+        <div class="bg-blue-50 rounded-2xl p-8">
+          <div class="w-32 h-32 bg-blue-800 rounded-full mx-auto mb-6 flex items-center justify-center">
+            <img class="h-24 w-24 rounded-full object-cover" src="/logo-osis.png" alt="Logo OSIS SMK Nurul Islam" />
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Est. 1985</h3>
+            <p class="text-gray-600 text-lg">
+              Hampir 40 tahun mengabdi untuk pendidikan dan pengembangan siswa
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi Misi Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Visi & Misi
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Landasan fundamental yang mengarahkan setiap langkah dan program kerja OSIS SMK Nurul Islam
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Visi -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+          <div class="w-20 h-20 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">VISI</h3>
+          <p class="text-lg text-gray-700 leading-relaxed text-center">
+            "Menjadikan OSIS SMK Nurul Islam
+sebagai organisasi yang aktif, inovatif,
+dan inspiratif, yang mendorong
+keterlibatan siswa dalam kegiatan
+religius, akademik, dan non-akademik,
+serta menjadi wadah pembentukan
+karakter, kreativitas, dan kepemimpinan
+siswa yang bertanggung jawab"
+          </p>
+        </div>
+
+        <!-- Misi -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+          <div class="w-20 h-20 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-green-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">MISI</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div class="w-2 h-2 bg-green-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+              <p class="text-gray-700">Mengembangkan program sekolah yang variatif di bidang
+religius, akademik, dan non-akademik.</p>
+            </li>
+            <li class="flex items-start">
+              <div class="w-2 h-2 bg-green-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+              <p class="text-gray-700">Meneruskan serta memaksimalkan program kerja OSIS
+sebelumnya secara inovatif, kreatif, dan kompetitif serta
+mengelola media sosial OSIS sebagai sarana edukasi, promosi,
+dan apresiasi karya siswa.</p>
+            </li>
+            <li class="flex items-start">
+              <div class="w-2 h-2 bg-green-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+              <p class="text-gray-700">Menghadirkan seminar, workshop, atau talkshow inspiratif
+dengan narasumber dari alumni atau pihak luar.</p>
+            </li>
+            <li class="flex items-start">
+              <div class="w-2 h-2 bg-green-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+              <p class="text-gray-700">Menjadi wadah aspirasi siswa yang komunikatif dan
+bertanggung jawab lalu mendorong keterlibatan aktif siswa
+dalam setiap kegiatan sekolah.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Struktur Organisasi Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Struktur Organisasi
+        </h2>
+        <p class="text-xl text-gray-600">
+          Susunan pengurus OSIS periode 2025-2026
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <!-- Ketua & Wakil -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 text-center border border-blue-200">
+            <div class="w-24 h-24 bg-blue-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Ketua OSIS</h3>
+            <p class="text-blue-800 font-semibold text-lg">Jihan Nurana Tasah</p>
+            <p class="text-gray-600">XI MP 1</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 text-center border border-green-200">
+            <div class="w-24 h-24 bg-green-800 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Wakil Ketua</h3>
+            <p class="text-green-800 font-semibold text-lg">Fitriani K. Widasari</p>
+            <p class="text-gray-600">XI AKL</p>
+          </div>
+        </div>
+
+        <!-- Bidang-bidang -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Sekretaris</h4>
+            <p class="text-purple-800 font-medium">Firly Husnadiva</p>
+            <p class="text-sm text-gray-600">XI MP 1</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-yellow-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bendahara</h4>
+            <p class="text-yellow-800 font-medium">Muhammad Yusuf</p>
+            <p class="text-sm text-gray-600">XI RPL</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-red-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bid. Keterampilan</h4>
+            <p class="text-red-800 font-medium">Rina Wulandari</p>
+            <p class="text-sm text-gray-600">XII MM 1</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-indigo-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bid. Bela Negara</h4>
+            <p class="text-indigo-800 font-medium">Rizky Bima P.A</p>
+            <p class="text-sm text-gray-600">XI RPL</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-pink-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bid. Seni Budaya</h4>
+            <p class="text-pink-800 font-medium">Aqueena Shira Lathifa</p>
+            <p class="text-sm text-gray-600">XI MP 1</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-teal-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bid. Olahraga</h4>
+            <p class="text-teal-800 font-medium">Ammar Ashim Hadi</p>
+            <p class="text-sm text-gray-600">XI RPL</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-teal-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bid. Olahraga</h4>
+            <p class="text-teal-800 font-medium">Ammar Ashim Hadi</p>
+            <p class="text-sm text-gray-600">XI RPL</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-teal-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bid. Olahraga</h4>
+            <p class="text-teal-800 font-medium">Ammar Ashim Hadi</p>
+            <p class="text-sm text-gray-600">XI RPL</p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-teal-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-2">Bid. Olahraga</h4>
+            <p class="text-teal-800 font-medium">Ammar Ashim Hadi</p>
+            <p class="text-sm text-gray-600">XI RPL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nilai-nilai Organisasi Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Nilai-nilai Organisasi
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Prinsip dan nilai fundamental yang menjadi landasan dalam setiap kegiatan OSIS
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-blue-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Integritas</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Menjunjung tinggi kejujuran, transparansi, dan konsistensi dalam setiap tindakan
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-green-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Kerjasama</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Membangun sinergi dan gotong royong untuk mencapai tujuan bersama
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-purple-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Inovasi</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Selalu mencari cara baru dan kreatif untuk mengembangkan program-program
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-red-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Kepedulian</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Memiliki empati dan rasa peduli terhadap sesama dan lingkungan sekitar
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Kerja Tahunan Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Program Kerja Tahunan
+        </h2>
+        <p class="text-xl text-gray-600">
+          Kegiatan rutin yang dilaksanakan OSIS setiap tahun
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Semester Ganjil</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Masa Pengenalan Lingkungan Sekolah (MPLS)</h4>
+                <p class="text-sm text-gray-600">Juli - Agustus</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Pemilihan Ketua OSIS</h4>
+                <p class="text-sm text-gray-600">September</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Festival Seni dan Budaya</h4>
+                <p class="text-sm text-gray-600">Oktober</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Pekan Olahraga dan Seni (PORSENI)</h4>
+                <p class="text-sm text-gray-600">November</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Bakti Sosial Akhir Tahun</h4>
+                <p class="text-sm text-gray-600">Desember</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Semester Genap</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-green-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Olimpiade Sains dan Teknologi</h4>
+                <p class="text-sm text-gray-600">Februari</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-green-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">English Competition</h4>
+                <p class="text-sm text-gray-600">Maret</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-green-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Career Day dan Job Fair</h4>
+                <p class="text-sm text-gray-600">April</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-green-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Pelepasan Siswa Kelas XII</h4>
+                <p class="text-sm text-gray-600">Mei</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-3 h-3 bg-green-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Evaluasi Program Kerja</h4>
+                <p class="text-sm text-gray-600">Juni</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-20 bg-blue-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Jalin Kerja Sama dengan OSIS SMK Nurul Islam
+      </h2>
+      <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+        Dukung program positif kami di sekolah untuk mengembangkan potensi siswa. Bersama, kita
+        menciptakan kegiatan inspiratif yang bermanfaat bagi generasi muda.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/kontak" class="bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-300 shadow-lg">
+          Hubungi Kami
+        </a>
+        <a href="/program" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-800 transition duration-300">
+          Lihat Program Kami
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

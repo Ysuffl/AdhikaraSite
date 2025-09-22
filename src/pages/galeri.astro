@@ -1,0 +1,374 @@
+---
+// src/pages/galeri.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="OSIS SMK Nurul Islam - Galeri Kegiatan">
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-800 via-blue-700 to-blue-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          Galeri Kegiatan OSIS SMK Nurul Islam
+        </h1>
+        <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto">
+          Dokumentasi perjalanan dan pencapaian OSIS dalam berbagai kegiatan
+        </p>
+        <div class="mt-8 inline-flex items-center bg-blue-700 bg-opacity-50 rounded-full px-6 py-3">
+          <svg class="w-5 h-5 text-green-200 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93l.94-2H12a2 2 0 012 2v5.586l.707-.707a1 1 0 011.414 1.414L12 17.414l-4.121-4.121a1 1 0 011.414-1.414L10 12.586V7z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93l.94-2H12a2 2 0 012 2v5.586l.707-.707a1 1 0 011.414 1.414L12 17.414l-4.121-4.121a1 1 0 011.414-1.414L10 12.586V7z"></path>
+          </svg>
+          <span class="text-purple-100 font-medium">200+ Dokumentasi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="py-12 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Filter Kategori</h2>
+        <p class="text-gray-600">Pilih kategori untuk melihat dokumentasi kegiatan tertentu</p>
+      </div>
+      
+      <div class="flex flex-wrap justify-center gap-4" id="filter-buttons">
+        <button class="filter-btn active bg-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-purple-700 transition duration-300" data-filter="all">
+          Semua Kegiatan
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition duration-300" data-filter="akademik">
+          Akademik
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition duration-300" data-filter="olahraga">
+          Olahraga
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition duration-300" data-filter="budaya">
+          Seni & Budaya
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition duration-300" data-filter="sosial">
+          Sosial
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition duration-300" data-filter="keagamaan">
+          Keagamaan
+        </button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition duration-300" data-filter="teknologi">
+          Teknologi
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8" id="gallery-grid">
+        
+        <!-- Keagamaan Items -->
+        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_1" target="_blank" rel="noopener noreferrer" class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer block" data-category="sosial">
+          <div class="relative h-64 overflow-hidden">
+  <!-- Gambar sebagai background penuh -->
+        <img src="/MPLS.jpeg" 
+            alt="Logo" 
+            class="absolute inset-0 w-full h-full object-cover" />
+
+        <!-- Badge kategori -->
+        <div class="absolute top-4 left-4">
+            <span class="bg-green-800 bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">
+            Sosial
+            </span>
+        </div>
+
+        <!-- Ikon di pojok kanan -->
+        <div class="absolute top-4 right-4">
+            <svg class="w-5 h-5 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+            </path>
+            </svg>
+        </div>
+        </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Masa Perkenalan Lingkungan Sekolah</h3>
+            <p class="text-gray-600 text-sm mb-4">MPLS</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">10 April 2024</span>
+              <span class="text-purple-600 font-medium">30 Foto</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Keagamaan Items -->
+        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_1" target="_blank" rel="noopener noreferrer" class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer block" data-category="keagamaan">
+          <div class="relative h-64 overflow-hidden">
+  <!-- Gambar sebagai background penuh -->
+        <img src="/MPLS.jpeg" 
+            alt="Logo" 
+            class="absolute inset-0 w-full h-full object-cover" />
+
+        <!-- Badge kategori -->
+        <div class="absolute top-4 left-4">
+            <span class="bg-green-800 bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">
+            Keagamaan
+            </span>
+        </div>
+
+        <!-- Ikon di pojok kanan -->
+        <div class="absolute top-4 right-4">
+            <svg class="w-5 h-5 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
+            </path>
+            </svg>
+        </div>
+        </div>
+
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Maulid Nabi</h3>
+            <p class="text-gray-600 text-sm mb-4">MPLS</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">10 April 2024</span>
+              <span class="text-purple-600 font-medium">30 Foto</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Teknologi Items -->
+        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_2" target="_blank" rel="noopener noreferrer" class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer block" data-category="teknologi">
+          <div class="relative h-64 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+              </svg>
+              <p class="text-sm opacity-75">Klik untuk melihat foto</p>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-indigo-800 bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">Teknologi</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <svg class="w-5 h-5 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Skills Workshop</h3>
+            <p class="text-gray-600 text-sm mb-4">Pelatihan keterampilan digital seperti desain grafis, video editing, dan digital marketing.</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">25 Januari 2024</span>
+              <span class="text-purple-600 font-medium">33 Foto</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_3" target="_blank" rel="noopener noreferrer" class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer block" data-category="teknologi">
+          <div class="relative h-64 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9"></path>
+              </svg>
+              <p class="text-sm opacity-75">Klik untuk melihat foto</p>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-indigo-800 bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">Teknologi</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <svg class="w-5 h-5 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Launching Website Sekolah</h3>
+            <p class="text-gray-600 text-sm mb-4">Peluncuran website resmi SMK Nurul Islam dengan fitur informasi lengkap dan sistem akademik.</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">5 Desember 2024</span>
+              <span class="text-purple-600 font-medium">15 Foto</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_4" target="_blank" rel="noopener noreferrer" class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer block" data-category="teknologi">
+          <div class="relative h-64 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93l.94-2H12a2 2 0 012 2v5.586l.707-.707a1 1 0 011.414 1.414L12 17.414l-4.121-4.121a1 1 0 011.414-1.414L10 12.586V7z"></path>
+              </svg>
+              <p class="text-sm opacity-75">Klik untuk melihat foto</p>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-indigo-800 bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">Teknologi</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <svg class="w-5 h-5 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Dokumentasi Digital Events</h3>
+            <p class="text-gray-600 text-sm mb-4">Tim dokumentasi OSIS menggunakan teknologi terbaru untuk merekam setiap momen berharga.</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">Ongoing 2024</span>
+              <span class="text-purple-600 font-medium">50+ Foto</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Sosial Items -->
+        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_5" target="_blank" rel="noopener noreferrer" class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer block" data-category="sosial">
+          <div class="relative h-64 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zM3 9a2 2 0 012-2h14a2 2 0 012 2v2H3V9z"></path>
+              </svg>
+              <p class="text-sm opacity-75">Klik untuk melihat foto</p>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-yellow-800 bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">Sosial</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <svg class="w-5 h-5 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Green School Initiative</h3>
+            <p class="text-gray-600 text-sm mb-4">Program peduli lingkungan dengan penanaman pohon dan kampanye zero waste di sekolah.</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">22 April 2024</span>
+              <span class="text-purple-600 font-medium">45 Foto</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID_6" target="_blank" rel="noopener noreferrer" class="gallery-item bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl hover:scale-105 transition duration-300 cursor-pointer block" data-category="akademik">
+          <div class="relative h-64 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+            <div class="text-center text-white">
+              <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+              </svg>
+              <p class="text-sm opacity-75">Klik untuk melihat foto</p>
+            </div>
+            <div class="absolute top-4 left-4">
+              <span class="bg-red-800 bg-opacity-80 text-white px-3 py-1 rounded-full text-sm font-medium">Akademik</span>
+            </div>
+            <div class="absolute top-4 right-4">
+              <svg class="w-5 h-5 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Wisuda Siswa Berprestasi</h3>
+            <p class="text-gray-600 text-sm mb-4">Penganugerahan kepada siswa-siswa yang meraih prestasi akademik dan non-akademik terbaik.</p>
+            <div class="flex items-center justify-between text-sm">
+              <span class="text-gray-500">15 Juni 2024</span>
+              <span class="text-purple-600 font-medium">35 Foto</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button id="load-more" class="bg-purple-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition duration-300 shadow-lg">
+          Muat Lebih Banyak
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gradient-to-br from-blue-800 to-blue-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Ikuti Kegiatan OSIS Terbaru
+      </h2>
+      <p class="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
+        Jangan lewatkan dokumentasi kegiatan terbaru dari OSIS SMK Nurul Islam. Follow media sosial kami untuk update terkini.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://www.instagram.com/osis.smknuriis?igsh=MWtiYmMxY2JzMDF5Zg==" target="_blank" class="bg-white text-purple-800 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition duration-300 shadow-lg">
+          Follow Instagram
+        </a>
+        <a href="/program" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-800 transition duration-300">
+          Lihat Program Kerja
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    // Filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const loadMoreBtn = document.getElementById('load-more');
+    
+    let visibleItems = 12; // Initially show 12 items
+    
+    // Show initial items
+    function showItems(count) {
+      galleryItems.forEach((item, index) => {
+        if (index < count && !item.hasAttribute('data-hidden')) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+    
+    // Filter functionality
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active', 'bg-purple-600', 'text-white');
+          btn.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        
+        // Add active class to clicked button
+        button.classList.add('active', 'bg-purple-600', 'text-white');
+        button.classList.remove('bg-gray-200', 'text-gray-700');
+        
+        const filter = button.dataset.filter;
+        
+        // Filter items
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.removeAttribute('data-hidden');
+          } else {
+            item.setAttribute('data-hidden', 'true');
+          }
+        });
+        
+        // Reset visible items count and show filtered items
+        visibleItems = 12;
+        showItems(visibleItems);
+        
+        // Show/hide load more button
+        const visibleItemsCount = document.querySelectorAll('.gallery-item:not([data-hidden])').length;
+        loadMoreBtn.style.display = visibleItemsCount > visibleItems ? 'block' : 'none';
+      });
+    });
+    
+    // Load more functionality
+    loadMoreBtn.addEventListener('click', () => {
+      visibleItems += 6;
+      showItems(visibleItems);
+      
+      // Hide button if all items are shown
+      const visibleItemsCount = document.querySelectorAll('.gallery-item:not([data-hidden])').length;
+      if (visibleItems >= visibleItemsCount) {
+        loadMoreBtn.style.display = 'none';
+      }
+    });
+    
+    // Initialize
+    showItems(visibleItems);
+  </script>
+</Layout>
