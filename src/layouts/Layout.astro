@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Website Resmi OSIS SMA Negeri 1 Jakarta - Organisasi Siswa Intra Sekolah" } = Astro.props;
+const { title, description = "Website Resmi OSIS SMK NURUL ISLAM - Organisasi Siswa Intra Sekolah" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -75,49 +75,169 @@ const { title, description = "Website Resmi OSIS SMA Negeri 1 Jakarta - Organisa
     </main>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div class="col-span-2">
-            <div class="flex items-center mb-4">
-              <div class="h-12 w-12 bg-white rounded-full flex items-center justify-center mr-3">
-                <span class="text-blue-900 font-bold text-xl">O</span>
-              </div>
-              <div>
-                <h3 class="text-xl font-bold">OSIS SMk Nurul Islam Jakarta</h3>
-                <p class="text-blue-200">Organisasi Siswa Intra Sekolah</p>
-              </div>
+<footer class="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 text-white relative overflow-hidden">
+  <!-- Background decorative elements -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
+    <div class="absolute bottom-10 right-10 w-24 h-24 border border-white rounded-full"></div>
+    <div class="absolute top-1/2 left-1/3 w-16 h-16 border border-white rounded-full"></div>
+  </div>
+
+  <div class="relative z-10">
+    <!-- Main footer content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+        
+        <!-- Organization Info -->
+        <div class="lg:col-span-2">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center mb-6">
+            <div class="h-16 w-16 bg-white rounded-2xl flex items-center justify-center mr-0 sm:mr-4 mb-4 sm:mb-0 shadow-lg">
+              <span class="text-blue-900 font-bold text-2xl">O</span>
             </div>
-            <p class="text-blue-100 mb-4">
-              Wadah organisasi siswa yang berperan dalam mengembangkan potensi, kreativitas, dan kepemimpinan siswa SMK NURUL ISLAM.
-            </p>
-          </div>
-          
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Menu Utama</h4>
-            <ul class="space-y-2 text-blue-100">
-              <li><a href="/" class="hover:text-white transition duration-150">Beranda</a></li>
-              <li><a href="/profil" class="hover:text-white transition duration-150">Profil</a></li>
-              <li><a href="/pengurus" class="hover:text-white transition duration-150">Pengurus</a></li>
-              <li><a href="/program" class="hover:text-white transition duration-150">Program Kerja</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Kontak</h4>
-            <div class="space-y-2 text-blue-100">
-              <p>📍 Jl. Mawar Merah No.1, Malaka Jaya, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta</p>
-              <p>📞 (021) 86613750</p>
-              <p>✉️ admin@smknurulislam.sch.id</p>
+            <div class="text-center sm:text-left">
+              <h3 class="text-2xl font-bold mb-1">OSIS SMK Nurul Islam Jakarta</h3>
+              <p class="text-blue-200 text-lg">Organisasi Siswa Intra Sekolah</p>
             </div>
+          </div>
+          <p class="text-blue-100 text-base leading-relaxed mb-6 max-w-md">
+            Wadah organisasi siswa yang berperan dalam mengembangkan potensi, kreativitas, dan kepemimpinan siswa SMK Nurul Islam Jakarta melalui berbagai program dan kegiatan yang inovatif.
+          </p>
+          
+          <!-- Social Media -->
+          <div class="flex flex-wrap gap-4">
+            <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300 hover:scale-110 group">
+              <i class="fab fa-instagram text-xl group-hover:text-pink-300"></i>
+            </a>
+            <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300 hover:scale-110 group">
+              <i class="fab fa-youtube text-xl group-hover:text-red-300"></i>
+            </a>
+            <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300 hover:scale-110 group">
+              <i class="fab fa-facebook text-xl group-hover:text-blue-300"></i>
+            </a>
+            <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-lg transition-all duration-300 hover:scale-110 group">
+              <i class="fab fa-tiktok text-xl group-hover:text-gray-300"></i>
+            </a>
           </div>
         </div>
         
-        <div class="border-t border-blue-700 mt-8 pt-8 text-center text-blue-200">
-          <p>&copy; 2025 OSIS SMK NURUL ISLAM</p>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-xl font-semibold mb-6 text-center lg:text-left">Menu Utama</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="/" class="text-blue-100 hover:text-white transition-all duration-200 flex items-center group">
+                <i class="fas fa-home mr-3 text-blue-300 group-hover:text-white transition-colors duration-200"></i>
+                <span class="relative">
+                  Beranda
+                  <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/profil" class="text-blue-100 hover:text-white transition-all duration-200 flex items-center group">
+                <i class="fas fa-info-circle mr-3 text-blue-300 group-hover:text-white transition-colors duration-200"></i>
+                <span class="relative">
+                  Profil
+                  <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/pengurus" class="text-blue-100 hover:text-white transition-all duration-200 flex items-center group">
+                <i class="fas fa-users mr-3 text-blue-300 group-hover:text-white transition-colors duration-200"></i>
+                <span class="relative">
+                  Pengurus
+                  <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/program" class="text-blue-100 hover:text-white transition-all duration-200 flex items-center group">
+                <i class="fas fa-tasks mr-3 text-blue-300 group-hover:text-white transition-colors duration-200"></i>
+                <span class="relative">
+                  Program Kerja
+                  <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/berita" class="text-blue-100 hover:text-white transition-all duration-200 flex items-center group">
+                <i class="fas fa-newspaper mr-3 text-blue-300 group-hover:text-white transition-colors duration-200"></i>
+                <span class="relative">
+                  Berita & Kegiatan
+                  <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-xl font-semibold mb-6 text-center lg:text-left">Kontak Kami</h4>
+          <div class="space-y-4">
+            <div class="flex items-start group">
+              <div class="bg-blue-700 p-2 rounded-lg mr-3 group-hover:bg-blue-600 transition-colors duration-200">
+                <i class="fas fa-map-marker-alt text-white"></i>
+              </div>
+              <div class="flex-1">
+                <p class="text-blue-100 text-sm leading-relaxed">
+                  Jl. Mawar Merah No.1, Malaka Jaya<br>
+                  Kec. Duren Sawit, Jakarta Timur<br>
+                  DKI Jakarta
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-center group">
+              <div class="bg-blue-700 p-2 rounded-lg mr-3 group-hover:bg-blue-600 transition-colors duration-200">
+                <i class="fas fa-phone text-white"></i>
+              </div>
+              <a href="tel:02186613750" class="text-blue-100 hover:text-white transition-colors duration-200">
+                
+              </a>
+            </div>
+            
+            <div class="flex items-center group">
+              <div class="bg-blue-700 p-2 rounded-lg mr-3 group-hover:bg-blue-600 transition-colors duration-200">
+                <i class="fas fa-envelope text-white"></i>
+              </div>
+              <a href="mailto:osissmknuriis@gmail.com" class="text-blue-100 hover:text-white transition-colors duration-200 break-all">
+                osissmknuriis@gmail.com
+              </a>
+            </div>
+            
+            <div class="flex items-center group">
+              <div class="bg-blue-700 p-2 rounded-lg mr-3 group-hover:bg-blue-600 transition-colors duration-200">
+                <i class="fas fa-clock text-white"></i>
+              </div>
+              <div class="text-blue-100 text-sm">
+                <p>Senin - Jumat</p>
+                <p>07:00 - 15:00 WIB</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-blue-700/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+          <div class="text-blue-200 text-sm text-center sm:text-left">
+            <p>&copy; 2025 OSIS SMK Nurul Islam Jakarta. Semua hak dilindungi.</p>
+          </div>
+          <div class="flex flex-wrap gap-6 text-sm">
+            <a href="#" class="text-blue-200 hover:text-white transition-colors duration-200">Kebijakan Privasi</a>
+            <a href="#" class="text-blue-200 hover:text-white transition-colors duration-200">Syarat & Ketentuan</a>
+            <a href="#" class="text-blue-200 hover:text-white transition-colors duration-200">Peta Situs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <!-- Script untuk toggle menu -->
     <script is:inline>
